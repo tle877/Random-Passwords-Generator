@@ -31,7 +31,7 @@ button{
     height:7%,
 }
 
-.pass{
+.pass{  
     color: #55F991;
     width: 40%;
     background-color: #273549;
@@ -51,7 +51,7 @@ button{
     margin: 2rem;
 }   
 #len{
-    width:15%;
+    width:20%;
     margin-left:5px;
     text-align: center;
     
