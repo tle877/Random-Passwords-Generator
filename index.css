@@ -28,7 +28,9 @@ button{
     max-width:65%;
     display:flex;
     justify-content: space-between;
-    height:7%,
+    height:fit-content;
+    word-wrap:break-word
+
 }
 
 .pass{  
