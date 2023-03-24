@@ -3,22 +3,32 @@
         <link rel="stylesheet" href="index.css">
     </head>
     <body>
-        <h1>Generate a <br> <span>random password</span></h1>
-        <p style="font-style:italic";>Never use an <span style="color:red";}>insecure</span> password again.</p>
-        <div class="condition1">
-            Password length:<input type="number" id="len" placeholder="...default length:15...">
-        </div> 
-        <div class="condition2">
-            <label for="num">Include Numbers: <input type="checkbox" id="num"></label>
-        </div>
-        <button id="btn" onclick="generate()">Generate passwords</button>
-        <div class="line">
-        </div>
-        <div class="pass-container">
-            <p id="p1" class="pass"></p>
-            <p id="p2" class="pass"></p>
-            
-        </div>
+        <main>
+            <h1>Generate a <br> <span>random password</span></h1>
+            <p style="font-style:italic";>Never use an <span style="color:red";}>insecure</span> password again.</p>
+
+            <div id="input">
+                Password length:<input type="number" id="len" placeholder="...default length:15...">
+            </div> 
+            <div class="condition">
+                <label for="num"><input type="checkbox" id="num" class="check"> Include Numbers:  </label>
+                <label for="upper"><input type="checkbox" id="upper" class="check"> Include Uppercase: </label>
+                <label for="lower"><input type="checkbox" id="lower" class="check"> Include Lowercase: </label>
+                <label for="sym"><input type="checkbox" id="sym" class="check"> Include Symbol: </label>
+            </div>
+           
+           
+            <button id="btn" onclick="generate()">Generate passwords</button>
+            <div class="line"></div>
+            <p id="error" class="anounce"></p>   
+            <p id="success" class="anounce"></p>   
+            <div class="pass-container">
+                <p id="p1" class="pass"></p>
+                <p id="p2" class="pass"></p>
+                
+            </div>
+        </main>
+        
         <script src="index.js"></script>
     </body>
 </html>
