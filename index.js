@@ -24,6 +24,7 @@ function generate(){
         let newchar1="";
         let newchar2="";
         let arr=[];
+        let arr2=[]
         if (!num1.checked && !upper1.checked && !lower1.checked && !sym1.checked){
             err.innerText = "Please choose at least 1 condition above"
             suc.innerText=""
@@ -35,19 +36,22 @@ function generate(){
     
         if(num1.checked){
             arr.push(numbers[Math.floor(Math.random()*(numbers.length))])
-
+            arr2.push(numbers[Math.floor(Math.random()*(numbers.length))])
         }
         if(upper1.checked){
             arr.push(uppercaseLetters[Math.floor( Math.random()*(uppercaseLetters.length))])
+            arr2.push(uppercaseLetters[Math.floor( Math.random()*(uppercaseLetters.length))])
         }
         if(lower1.checked){
             arr.push(lowercaseLetters[Math.floor( Math.random()*(lowercaseLetters.length))])
+            arr2.push(lowercaseLetters[Math.floor( Math.random()*(lowercaseLetters.length))])
         }
         if(sym1.checked){
             arr.push(symbols[Math.floor( Math.random()*(symbols.length))])
+            arr2.push(symbols[Math.floor( Math.random()*(symbols.length))])
         }
         newchar1 = arr[Math.floor(Math.random()*arr.length)];
-        newchar2 = arr[Math.floor(Math.random()*arr.length)];
+        newchar2 = arr2[Math.floor(Math.random()*arr2.length)];
    
         
         result1+=newchar1;
